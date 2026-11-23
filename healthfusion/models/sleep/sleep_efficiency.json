@@ -1,0 +1,43 @@
+{
+  "key": "sleep_efficiency",
+  "task": "sleep_efficiency_regression",
+  "dataset": "MMASH",
+  "best_configuration": {
+    "modalities": [
+      "Behavioural",
+      "Psychological"
+    ],
+    "strategy": "early",
+    "model": "random_forest"
+  },
+  "features": [
+    "behav_vm_mean",
+    "behav_steps_per_hour",
+    "behav_frac_standing",
+    "behav_frac_lying",
+    "behav_mvpa_min",
+    "behav_screen_min",
+    "behav_caffeine_n",
+    "psych_meq",
+    "psych_stai_state",
+    "psych_stai_trait",
+    "psych_daily_stress",
+    "psych_bis",
+    "psych_panas_pos_day",
+    "psych_panas_neg_day"
+  ],
+  "n_participants": 21,
+  "validation": {
+    "scheme": "leave-one-subject-out",
+    "mae": 5.423843257958548,
+    "rmse": 6.57183452403795,
+    "r2": 0.0071679498944292,
+    "baseline_mae": 6.040062628993773,
+    "permutation_p_value": 0.0895522388059701,
+    "permutation_p_holm": 1.0,
+    "n_configurations_tested": 15,
+    "criterion": "LOSO R2 > 0 and Holm-adjusted permutation p < 0.05 (lowest-MAE tested model)",
+    "validated": false
+  },
+  "decision": "NOT served: no MMASH model predicted sleep efficiency better than the participant mean under LOSO."
+}

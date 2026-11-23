@@ -1,0 +1,59 @@
+{
+  "key": "stress_eda_hr",
+  "task": "stress_classification",
+  "dataset": "QoL_Stress",
+  "modalities": [
+    "EDA",
+    "HR"
+  ],
+  "strategy": "early",
+  "algorithm": "random_forest",
+  "features": [
+    "eda_scl_mean",
+    "eda_scl_std",
+    "eda_scl_slope",
+    "eda_scl_range",
+    "eda_resp_rate",
+    "fb_hr_mean",
+    "fb_hr_std",
+    "fb_hr_p05",
+    "fb_hr_p95",
+    "fb_hr_slope"
+  ],
+  "positive_class": "stress (1); relax = 0",
+  "threshold": 0.5,
+  "trained_on": {
+    "participants": 45,
+    "rows": 90,
+    "subset": "complete-case participants (all three modalities in both phases)"
+  },
+  "hyperparameters": {
+    "model__max_depth": 3
+  },
+  "random_seed": 42,
+  "validation": {
+    "scheme": "5-fold participant-grouped CV x 5 repeats, nested tuning",
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "roc_auc_mean": 0.7343209876543209,
+    "roc_auc_sd": 0.1004309162948491,
+    "balanced_accuracy_mean": 0.64,
+    "macro_f1_mean": 0.6303781485486291,
+    "pairwise_accuracy_mean": 0.7911111111111111,
+    "corrected_ttest_vs_chance": {
+      "mean_diff": 0.23432098765432097,
+      "t": 4.332561789708729,
+      "p_value": 0.00022673866771558322
+    },
+    "permutation_p_value": null,
+    "criterion": "mean AUC > 0.5 and corrected resampled t-test p < 0.05",
+    "validated": true
+  },
+  "intended_use": "Research demonstration only. Not a medical device; not for diagnosis.",
+  "trained_at": "2026-11-19T02:57:34+00:00"
+}

@@ -1,0 +1,167 @@
+{
+  "qol_stress": {
+    "ECG+EDA+HR | early | logreg": {
+      "output_scale": "log-odds",
+      "rank_stability_mean_pairwise_spearman": 0.7392857142857141,
+      "modality_share": {
+        "ECG": 0.2763,
+        "EDA": 0.3936,
+        "HR": 0.3301
+      },
+      "top5": [
+        {
+          "feature": "fb_hr_slope",
+          "mean_abs_shap": 0.053,
+          "mean_shap": -0.0105
+        },
+        {
+          "feature": "ecg_hr_range",
+          "mean_abs_shap": 0.0521,
+          "mean_shap": 0.0003
+        },
+        {
+          "feature": "eda_scl_range",
+          "mean_abs_shap": 0.0478,
+          "mean_shap": -0.0007
+        },
+        {
+          "feature": "eda_scl_std",
+          "mean_abs_shap": 0.0438,
+          "mean_shap": -0.003
+        },
+        {
+          "feature": "ecg_sdnn",
+          "mean_abs_shap": 0.04,
+          "mean_shap": -0.0002
+        }
+      ],
+      "individual_examples": {
+        "confident_stress": {
+          "pid": "Q13",
+          "phase": "stress",
+          "prob_stress": 0.7275022914999895
+        },
+        "confident_relax": {
+          "pid": "Q05",
+          "phase": "relax",
+          "prob_stress": 0.36236255525676997
+        },
+        "misclassified": {
+          "pid": "Q33",
+          "phase": "relax",
+          "prob_stress": 0.633209520848993
+        }
+      }
+    },
+    "EDA | single | random_forest": {
+      "output_scale": "probability",
+      "rank_stability_mean_pairwise_spearman": 0.5,
+      "modality_share": {
+        "EDA": 1.0
+      },
+      "top5": [
+        {
+          "feature": "eda_scl_range",
+          "mean_abs_shap": 0.115,
+          "mean_shap": -0.002
+        },
+        {
+          "feature": "eda_resp_rate",
+          "mean_abs_shap": 0.044,
+          "mean_shap": 0.0061
+        },
+        {
+          "feature": "eda_scl_slope",
+          "mean_abs_shap": 0.0384,
+          "mean_shap": 0.008
+        },
+        {
+          "feature": "eda_scl_std",
+          "mean_abs_shap": 0.0364,
+          "mean_shap": -0.0079
+        },
+        {
+          "feature": "eda_scl_mean",
+          "mean_abs_shap": 0.0275,
+          "mean_shap": -0.0016
+        }
+      ]
+    },
+    "ECG+EDA+HR | early | xgboost": {
+      "output_scale": "log-odds",
+      "rank_stability_mean_pairwise_spearman": 0.6399999999999999,
+      "modality_share": {
+        "ECG": 0.2921,
+        "EDA": 0.3773,
+        "HR": 0.3306
+      },
+      "top5": [
+        {
+          "feature": "eda_scl_range",
+          "mean_abs_shap": 0.6474,
+          "mean_shap": -0.0161
+        },
+        {
+          "feature": "fb_hr_slope",
+          "mean_abs_shap": 0.4522,
+          "mean_shap": 0.0322
+        },
+        {
+          "feature": "ecg_hr_range",
+          "mean_abs_shap": 0.4214,
+          "mean_shap": -0.0005
+        },
+        {
+          "feature": "fb_hr_std",
+          "mean_abs_shap": 0.4025,
+          "mean_shap": -0.0438
+        },
+        {
+          "feature": "eda_scl_slope",
+          "mean_abs_shap": 0.2351,
+          "mean_shap": 0.0328
+        }
+      ]
+    },
+    "ranking_agreement_spearman": {
+      "ECG+EDA+HR | early | logreg  vs  EDA | single | random_forest": 0.7,
+      "ECG+EDA+HR | early | logreg  vs  ECG+EDA+HR | early | xgboost": 0.6678571428571428,
+      "EDA | single | random_forest  vs  ECG+EDA+HR | early | xgboost": 0.7999999999999999
+    }
+  },
+  "mmash": {
+    "target": "sleep_efficiency",
+    "model": "ridge, all modalities, LOSO",
+    "modality_share": {
+      "Behavioural": 0.3504,
+      "Physiological": 0.2912,
+      "Psychological": 0.3584
+    },
+    "top5": [
+      {
+        "feature": "psych_stai_state",
+        "mean_abs_shap": 0.0906
+      },
+      {
+        "feature": "phys_rmssd",
+        "mean_abs_shap": 0.058
+      },
+      {
+        "feature": "phys_pnn50",
+        "mean_abs_shap": 0.0575
+      },
+      {
+        "feature": "behav_frac_standing",
+        "mean_abs_shap": 0.0489
+      },
+      {
+        "feature": "psych_meq",
+        "mean_abs_shap": 0.0457
+      }
+    ],
+    "model_validated": false,
+    "verdict": "LOSO R2 = -0.19, permutation p = 0.392: model did NOT beat the mean baseline",
+    "caveat": "With n = 21 these attributions are descriptive of one fitted model family only."
+  },
+  "interpretation_note": "SHAP values describe model behaviour (how predictions depend on inputs), not causal effects of physiology on stress or sleep."
+}

@@ -1,0 +1,53 @@
+{
+  "key": "stress_eda",
+  "task": "stress_classification",
+  "dataset": "QoL_Stress",
+  "modalities": [
+    "EDA"
+  ],
+  "strategy": "single",
+  "algorithm": "random_forest",
+  "features": [
+    "eda_scl_mean",
+    "eda_scl_std",
+    "eda_scl_slope",
+    "eda_scl_range",
+    "eda_resp_rate"
+  ],
+  "positive_class": "stress (1); relax = 0",
+  "threshold": 0.5,
+  "trained_on": {
+    "participants": 45,
+    "rows": 90,
+    "subset": "complete-case participants (all three modalities in both phases)"
+  },
+  "hyperparameters": {
+    "model__max_depth": 3
+  },
+  "random_seed": 42,
+  "validation": {
+    "scheme": "5-fold participant-grouped CV x 5 repeats, nested tuning",
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "roc_auc_mean": 0.6824691358024693,
+    "roc_auc_sd": 0.1333733364773375,
+    "balanced_accuracy_mean": 0.6555555555555556,
+    "macro_f1_mean": 0.6505705345939563,
+    "pairwise_accuracy_mean": 0.7244444444444444,
+    "corrected_ttest_vs_chance": {
+      "mean_diff": 0.18246913580246918,
+      "t": 2.5405128772100074,
+      "p_value": 0.017954059713284048
+    },
+    "permutation_p_value": 0.0392156862745098,
+    "criterion": "mean AUC > 0.5 and corrected resampled t-test p < 0.05",
+    "validated": true
+  },
+  "intended_use": "Research demonstration only. Not a medical device; not for diagnosis.",
+  "trained_at": "2026-11-19T02:57:36+00:00"
+}

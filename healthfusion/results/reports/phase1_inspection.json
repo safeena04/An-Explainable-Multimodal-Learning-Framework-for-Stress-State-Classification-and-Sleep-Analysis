@@ -1,0 +1,1377 @@
+{
+  "qol_stress": {
+    "files": {
+      "participants": {
+        "n_rows": 66,
+        "n_columns": 5,
+        "columns": {
+          "username": "str",
+          "sex": "str",
+          "age": "int64",
+          "education_level": "str",
+          "job_category": "str"
+        },
+        "missing_values": {},
+        "exact_duplicate_rows": 0,
+        "n_participants": 66
+      },
+      "ecg": {
+        "n_rows": 132,
+        "n_columns": 13,
+        "columns": {
+          "_id": "str",
+          "reading_id": "str",
+          "reading_time": "str",
+          "wire_id": "str",
+          "result_classification": "str",
+          "heart_rate": "int64",
+          "heart_rate_alert": "str",
+          "firmware_version": "str",
+          "device_app_version": "float64",
+          "hardware_version": "str",
+          "username": "str",
+          "phase": "str",
+          "waveform_samples": "str"
+        },
+        "missing_values": {},
+        "exact_duplicate_rows": 0,
+        "n_participants": 66
+      },
+      "eda": {
+        "n_rows": 20094,
+        "n_columns": 6,
+        "columns": {
+          "username": "str",
+          "phase": "str",
+          "time_sec": "int64",
+          "valid_data": "bool",
+          "activation": "float64",
+          "scl_avg": "float64"
+        },
+        "missing_values": {},
+        "exact_duplicate_rows": 1542,
+        "n_participants": 64
+      },
+      "hr_second": {
+        "n_rows": 54462,
+        "n_columns": 3,
+        "columns": {
+          "username": "str",
+          "time": "str",
+          "value": "int64"
+        },
+        "missing_values": {},
+        "exact_duplicate_rows": 0,
+        "n_participants": 66
+      },
+      "hr_minute": {
+        "n_rows": 2131,
+        "n_columns": 3,
+        "columns": {
+          "username": "str",
+          "time": "str",
+          "value": "int64"
+        },
+        "missing_values": {},
+        "exact_duplicate_rows": 0,
+        "n_participants": 66
+      },
+      "hr_summary": {
+        "n_rows": 264,
+        "n_columns": 6,
+        "columns": {
+          "username": "str",
+          "zone_name": "str",
+          "min": "int64",
+          "max": "int64",
+          "minutes": "int64",
+          "caloriesOut": "float64"
+        },
+        "missing_values": {},
+        "exact_duplicate_rows": 0,
+        "n_participants": 66
+      },
+      "pss": {
+        "n_rows": 66,
+        "n_columns": 17,
+        "columns": {
+          "username": "str",
+          "time": "str",
+          "score": "int64",
+          "In the last month, how often have you felt everything was under control?": "str",
+          "In the last month, how often have you felt unable to control important things in your life?": "str",
+          "In the last month, how often have you been upset by something that happened unexpectedly?": "str",
+          "In the last month, how often have you been angry because things that happened were outside your control?": "str",
+          "In the last month, how often have you felt confident in your ability to handle personal problems?": "str",
+          "In the last month, how often have you successfully handled small irritations of life?": "str",
+          "In the last month, how often have you thought about the things you still have to do?": "str",
+          "In the last month, how often have you been able to control how you spend your time?": "str",
+          "En el \u00faltimo mes, \u00bfcon qu\u00e9 frecuencia ha podido controlar las dificultades de su vida?": "str",
+          "In the last month, how often have you felt you effectively managed important changes in your life?": "str",
+          "In the last month, how often have things gone well for you?": "str",
+          "In the last month, how often have you felt that difficulties pile up so much that you cannot overcome them?": "str",
+          "In the last month, how often have you felt unable to cope with all the things you had to do?": "str",
+          "In the last month, how often have you felt nervous or stressed?": "str"
+        },
+        "missing_values": {},
+        "exact_duplicate_rows": 0,
+        "n_participants": 66
+      },
+      "stai": {
+        "n_rows": 132,
+        "n_columns": 24,
+        "columns": {
+          "username": "str",
+          "time": "str",
+          "phase": "str",
+          "score": "int64",
+          "At this moment I feel good": "str",
+          "I feel upset": "str",
+          "I feel jittery": "str",
+          "I feel worried": "str",
+          "I am presently worrying about possible future misfortunes": "str",
+          "I am relaxed": "str",
+          "I am tense": "str",
+          "I feel happy": "str",
+          "I feel agitated": "str",
+          "I feel distressed": "str",
+          "I feel confused and over-excited": "str",
+          "I feel calm": "str",
+          "I feel at ease": "str",
+          "I feel comfortable": "str",
+          "I feel rested": "str",
+          "\"I feel strained\"": "str",
+          "I feel nervous": "str",
+          "I feel satisfied": "str",
+          "I feel secure": "str",
+          "I have self-confidence": "str"
+        },
+        "missing_values": {},
+        "exact_duplicate_rows": 0,
+        "n_participants": 66
+      }
+    },
+    "n_participants": 66,
+    "phase_counts": {
+      "ecg": {
+        "relax": 66,
+        "stress": 66
+      },
+      "eda": {
+        "relax": 10367,
+        "stress": 9727
+      },
+      "stai": {
+        "relax": 66,
+        "stress": 66
+      }
+    },
+    "eda_sessions": {
+      "participants_with_any_eda": 64,
+      "both_phases": 60,
+      "relax_only": 4,
+      "stress_only": 0,
+      "participants_without_eda": [
+        "Q15",
+        "Q44"
+      ],
+      "rows_per_session": {
+        "count": 124.0,
+        "mean": 162.0,
+        "std": 1.3,
+        "min": 158.0,
+        "25%": 162.0,
+        "50%": 162.0,
+        "75%": 163.0,
+        "max": 164.0
+      }
+    },
+    "ecg": {
+      "records": 132,
+      "records_per_participant": {
+        "2": 66
+      },
+      "samples_per_record": {
+        "7500": 107,
+        "7501": 21,
+        "7488": 2,
+        "7499": 1,
+        "7489": 1
+      },
+      "records_with_repaired_token": 18,
+      "device": [
+        "Charge 6"
+      ],
+      "result_classification_by_phase": {
+        "NSR": {
+          "relax": 60,
+          "stress": 62
+        },
+        "UNCLASSIFIABLE": {
+          "relax": 6,
+          "stress": 4
+        }
+      },
+      "duplicated_reading_ids": {
+        "770c2cd0-b709-11ef-8080-808080808080": {
+          "pids": [
+            "Q15",
+            "Q48"
+          ],
+          "phases": [
+            "stress",
+            "stress"
+          ],
+          "identical_waveforms": true,
+          "reading_times": [
+            "16:14:35",
+            "12:14:35"
+          ]
+        },
+        "eb7e45f0-b707-11ef-8080-808080808080": {
+          "pids": [
+            "Q15",
+            "Q48"
+          ],
+          "phases": [
+            "relax",
+            "relax"
+          ],
+          "identical_waveforms": true,
+          "reading_times": [
+            "16:03:31",
+            "12:03:31"
+          ]
+        }
+      },
+      "sampling_rate_note": "Not stated in the files. 7500 samples per record; verified as 250 Hz by R-peak heart-rate agreement with device HR (see preprocessing QC)."
+    },
+    "eda": {
+      "time_sec_resolution": "integer seconds, repeated in blocks (~5 rows share one value)",
+      "rows_per_second_normal_sessions": 1.0,
+      "sessions_with_negative_time_offset": [
+        "Q11/stress",
+        "Q26/relax",
+        "Q33/stress",
+        "Q54/stress",
+        "Q59/stress"
+      ],
+      "valid_data_false_rows": 386,
+      "activation_values": {
+        "0.0": 17254,
+        "1.0": 2840
+      },
+      "scl_avg_range": [
+        2.21,
+        56.46
+      ],
+      "unit_note": "Units of scl_avg are not documented in the release."
+    },
+    "fitbit_hr": {
+      "per_second_rows": 54462,
+      "per_second_interval_s": {
+        "2": 27706,
+        "3": 17560,
+        "1": 8864,
+        "4": 63,
+        "37": 23,
+        "5": 22,
+        "36": 20,
+        "35": 16
+      },
+      "per_second_median_interval_s": 2.0,
+      "per_second_rows_per_participant": {
+        "count": 66.0,
+        "mean": 825.2,
+        "std": 171.4,
+        "min": 35.0,
+        "25%": 754.8,
+        "50%": 824.5,
+        "75%": 898.8,
+        "max": 1360.0
+      },
+      "per_minute_rows": 2131,
+      "phase_column_present": false,
+      "summary_note": "fitbit_heart_rate_summary.csv is a whole-day zone summary (Out of Range minutes ~1440); it is not phase-specific and cannot be used for phase classification."
+    },
+    "timestamp_formats": {
+      "stai.time": {
+        "99:99:99": 121,
+        "9:99:99": 11
+      },
+      "pss_14.time": {
+        "99:99:99": 55,
+        "9:99:99": 11
+      },
+      "ecg.reading_time": {
+        "99:99:99": 131,
+        "Tue Dec 99 99:99:99": 1
+      },
+      "fitbit_per_second.time": {
+        "99:99:99": 47970,
+        "9:99:99": 6492
+      },
+      "eda.time_sec": "integer seconds relative to the start of each EDA scan"
+    },
+    "timeline_minutes_relative_to_stai_relax": {
+      "pss": {
+        "count": 66.0,
+        "mean": -13.0,
+        "std": 6.2,
+        "min": -52.5,
+        "25%": -13.6,
+        "50%": -12.6,
+        "75%": -11.9,
+        "max": 9.5
+      },
+      "stai_relax": {
+        "count": 66.0,
+        "mean": 0.0,
+        "std": 0.0,
+        "min": 0.0,
+        "25%": 0.0,
+        "50%": 0.0,
+        "75%": 0.0,
+        "max": 0.0
+      },
+      "stai_stress": {
+        "count": 66.0,
+        "mean": 12.3,
+        "std": 2.4,
+        "min": 9.1,
+        "25%": 10.8,
+        "50%": 11.9,
+        "75%": 12.9,
+        "max": 20.6
+      },
+      "ecg_relax": {
+        "count": 66.0,
+        "mean": 1.2,
+        "std": 24.1,
+        "min": -45.4,
+        "25%": -6.6,
+        "50%": -5.8,
+        "75%": -5.3,
+        "max": 113.1
+      },
+      "ecg_stress": {
+        "count": 66.0,
+        "mean": 10.2,
+        "std": 16.9,
+        "min": -31.9,
+        "25%": 5.0,
+        "50%": 6.2,
+        "75%": 8.0,
+        "max": 66.6
+      },
+      "fitbit_first": {
+        "count": 66.0,
+        "mean": -19.9,
+        "std": 4.2,
+        "min": -30.0,
+        "25%": -21.7,
+        "50%": -19.8,
+        "75%": -18.4,
+        "max": -1.0
+      },
+      "fitbit_last": {
+        "count": 66.0,
+        "mean": 12.4,
+        "std": 5.5,
+        "min": -18.6,
+        "25%": 10.6,
+        "50%": 12.1,
+        "75%": 14.0,
+        "max": 29.2
+      }
+    },
+    "stai_stress_always_after_relax": true,
+    "ecg_time_consistency": {
+      "ecg_relax_within_15min_before_stai_relax": 55,
+      "ecg_stress_between_stai_relax_and_stai_stress": 58,
+      "ecg_relax_outliers_pid": [
+        "Q11",
+        "Q13",
+        "Q16",
+        "Q24",
+        "Q33",
+        "Q38",
+        "Q41",
+        "Q48",
+        "Q49",
+        "Q58",
+        "Q59"
+      ],
+      "ecg_stress_outliers_pid": [
+        "Q10",
+        "Q23",
+        "Q26",
+        "Q40",
+        "Q41",
+        "Q48",
+        "Q49",
+        "Q61"
+      ]
+    },
+    "stai": {
+      "relax": {
+        "count": 66.0,
+        "mean": 33.52,
+        "std": 7.34,
+        "min": 23.0,
+        "25%": 27.0,
+        "50%": 33.0,
+        "75%": 37.75,
+        "max": 56.0
+      },
+      "stress": {
+        "count": 66.0,
+        "mean": 36.74,
+        "std": 8.59,
+        "min": 24.0,
+        "25%": 30.0,
+        "50%": 36.5,
+        "75%": 43.0,
+        "max": 58.0
+      },
+      "stress_gt_relax": 43,
+      "equal": 11,
+      "stress_lt_relax": 12
+    },
+    "pss14": {
+      "count": 66.0,
+      "mean": 24.03,
+      "std": 8.6,
+      "min": 4.0,
+      "25%": 19.0,
+      "50%": 24.0,
+      "75%": 29.75,
+      "max": 45.0
+    },
+    "demographics": {
+      "sex": {
+        "Male": 39,
+        "Female": 27
+      },
+      "age": {
+        "count": 66.0,
+        "mean": 29.7,
+        "std": 6.9,
+        "min": 22.0,
+        "25%": 25.0,
+        "50%": 27.0,
+        "75%": 32.0,
+        "max": 53.0
+      },
+      "education_level": {
+        "Master": 37,
+        "Bachelor": 16,
+        "PhD": 13
+      }
+    }
+  },
+  "mmash": {
+    "n_participant_folders": 22,
+    "rows_per_file_per_user": {
+      "1": {
+        "user_info": 1,
+        "questionnaire": 1,
+        "sleep": 2,
+        "saliva": 2,
+        "Activity": 32,
+        "Actigraph": 67936,
+        "RR": 91858
+      },
+      "2": {
+        "user_info": 1,
+        "questionnaire": 1,
+        "sleep": 1,
+        "saliva": 2,
+        "Activity": 24,
+        "Actigraph": 60862,
+        "RR": 71646
+      },
+      "3": {
+        "user_info": 1,
+        "questionnaire": 1,
+        "sleep": 1,
+        "saliva": 2,
+        "Activity": 21,
+        "Actigraph": 67772,
+        "RR": 83965
+      },
+      "4": {
+        "user_info": 1,
+        "questionnaire": 1,
+        "sleep": 1,
+        "saliva": 2,
+        "Activity": 19,
+        "Actigraph": 64796,
+        "RR": 62669
+      },
+      "5": {
+        "user_info": 1,
+        "questionnaire": 1,
+        "sleep": 1,
+        "saliva": 2,
+        "Activity": 17,
+        "Actigraph": 65054,
+        "RR": 77782
+      },
+      "6": {
+        "user_info": 1,
+        "questionnaire": 1,
+        "sleep": 1,
+        "saliva": 2,
+        "Activity": 22,
+        "Actigraph": 67400,
+        "RR": 92357
+      },
+      "7": {
+        "user_info": 1,
+        "questionnaire": 1,
+        "sleep": 1,
+        "saliva": 2,
+        "Activity": 12,
+        "Actigraph": 68714,
+        "RR": 83507
+      },
+      "8": {
+        "user_info": 1,
+        "questionnaire": 1,
+        "sleep": 1,
+        "saliva": 2,
+        "Activity": 25,
+        "Actigraph": 61678,
+        "RR": 71498
+      },
+      "9": {
+        "user_info": 1,
+        "questionnaire": 1,
+        "sleep": 1,
+        "saliva": 2,
+        "Activity": 19,
+        "Actigraph": 64121,
+        "RR": 75250
+      },
+      "10": {
+        "user_info": 1,
+        "questionnaire": 1,
+        "sleep": 1,
+        "saliva": 2,
+        "Activity": 26,
+        "Actigraph": 58616,
+        "RR": 68118
+      },
+      "11": {
+        "user_info": 1,
+        "questionnaire": 1,
+        "sleep": 0,
+        "saliva": 2,
+        "Activity": 35,
+        "Actigraph": 68362,
+        "RR": 76803
+      },
+      "12": {
+        "user_info": 1,
+        "questionnaire": 1,
+        "sleep": 1,
+        "saliva": 2,
+        "Activity": 28,
+        "Actigraph": 68739,
+        "RR": 81214
+      },
+      "13": {
+        "user_info": 1,
+        "questionnaire": 1,
+        "sleep": 1,
+        "saliva": 2,
+        "Activity": 7,
+        "Actigraph": 67350,
+        "RR": 81267
+      },
+      "14": {
+        "user_info": 1,
+        "questionnaire": 1,
+        "sleep": 1,
+        "saliva": 2,
+        "Activity": 23,
+        "Actigraph": 67995,
+        "RR": 78527
+      },
+      "15": {
+        "user_info": 1,
+        "questionnaire": 1,
+        "sleep": 1,
+        "saliva": 2,
+        "Activity": 10,
+        "Actigraph": 71045,
+        "RR": 102340
+      },
+      "16": {
+        "user_info": 1,
+        "questionnaire": 1,
+        "sleep": 1,
+        "saliva": 2,
+        "Activity": 19,
+        "Actigraph": 69850,
+        "RR": 78181
+      },
+      "17": {
+        "user_info": 1,
+        "questionnaire": 1,
+        "sleep": 1,
+        "saliva": 2,
+        "Activity": 24,
+        "Actigraph": 68351,
+        "RR": 92951
+      },
+      "18": {
+        "user_info": 1,
+        "questionnaire": 1,
+        "sleep": 1,
+        "saliva": 2,
+        "Activity": 23,
+        "Actigraph": 65911,
+        "RR": 74296
+      },
+      "19": {
+        "user_info": 1,
+        "questionnaire": 1,
+        "sleep": 1,
+        "saliva": 2,
+        "Activity": 21,
+        "Actigraph": 68326,
+        "RR": 80239
+      },
+      "20": {
+        "user_info": 1,
+        "questionnaire": 1,
+        "sleep": 1,
+        "saliva": 2,
+        "Activity": 18,
+        "Actigraph": 64740,
+        "RR": 72209
+      },
+      "21": {
+        "user_info": 1,
+        "questionnaire": 1,
+        "sleep": 1,
+        "saliva": 0,
+        "Activity": 20,
+        "Actigraph": 67186,
+        "RR": 81677
+      },
+      "22": {
+        "user_info": 1,
+        "questionnaire": 1,
+        "sleep": 1,
+        "saliva": 2,
+        "Activity": 11,
+        "Actigraph": 67874,
+        "RR": 70941
+      }
+    },
+    "files_missing": {
+      "sleep": [
+        11
+      ],
+      "saliva": [
+        21
+      ]
+    },
+    "load_issues": [
+      "user_8/RR: day codes [-29] recoded to 2 (23434 rows)",
+      "user_8/Actigraph: day codes [-29] recoded to 2 (22402 rows)",
+      "user_9/RR: day codes [-29] recoded to 2 (24165 rows)",
+      "user_9/Actigraph: day codes [-29] recoded to 2 (25024 rows)",
+      "user_21: saliva.csv not provided"
+    ],
+    "schemas": {
+      "user_info": {
+        "Gender": "str",
+        "Weight": "int64",
+        "Height": "int64",
+        "Age": "int64"
+      },
+      "questionnaire": {
+        "MEQ": "int64",
+        "STAI1": "int64",
+        "STAI2": "int64",
+        "Pittsburgh": "int64",
+        "Daily_stress": "int64",
+        "BISBAS_bis": "int64",
+        "BISBAS_reward": "int64",
+        "BISBAS_drive": "int64",
+        "BISBAS_fun": "int64",
+        "panas_pos_10": "int64",
+        "panas_pos_14": "int64",
+        "panas_pos_18": "int64",
+        "panas_pos_22": "int64",
+        "panas_pos_9+1": "int64",
+        "panas_neg_10": "int64",
+        "panas_neg_14": "int64",
+        "panas_neg_18": "int64",
+        "panas_neg_22": "int64",
+        "panas_neg_9+1": "int64"
+      },
+      "sleep": {
+        "In Bed Date": "int64",
+        "In Bed Time": "str",
+        "Out Bed Date": "int64",
+        "Out Bed Time": "str",
+        "Onset Date": "int64",
+        "Onset Time": "str",
+        "Latency": "int64",
+        "Efficiency": "float64",
+        "Total Minutes in Bed": "int64",
+        "Total Sleep Time (TST)": "int64",
+        "Wake After Sleep Onset (WASO)": "int64",
+        "Number of Awakenings": "int64",
+        "Average Awakening Length": "float64",
+        "Movement Index": "float64",
+        "Fragmentation Index": "int64",
+        "Sleep Fragmentation Index": "float64"
+      },
+      "saliva": {
+        "SAMPLES": "str",
+        "Cortisol NORM": "float64",
+        "Melatonin NORM": "float64"
+      },
+      "Activity": {
+        "Activity": "int64",
+        "Start": "str",
+        "End": "str",
+        "Day": "int64"
+      },
+      "Actigraph": {
+        "Axis1": "int64",
+        "Axis2": "int64",
+        "Axis3": "int64",
+        "Steps": "int64",
+        "HR": "float64",
+        "Inclinometer Off": "int64",
+        "Inclinometer Standing": "int64",
+        "Inclinometer Sitting": "int64",
+        "Inclinometer Lying": "int64",
+        "Vector Magnitude": "float64",
+        "day": "int64",
+        "time": "str"
+      },
+      "RR": {
+        "ibi_s": "float64",
+        "day": "int64",
+        "time": "str"
+      }
+    },
+    "missing_values_total": {
+      "Activity.End": 2,
+      "questionnaire.panas_pos_14": 1,
+      "questionnaire.panas_neg_14": 1
+    },
+    "exact_duplicate_rows_total": {
+      "user_info": 0,
+      "questionnaire": 0,
+      "sleep": 0,
+      "saliva": 0,
+      "Activity": 2,
+      "Actigraph": 0,
+      "RR": 12469
+    },
+    "actigraph_interval_s_top": {
+      "1": 1407970,
+      "7": 50166,
+      "8": 1434,
+      "10": 876,
+      "17": 543,
+      "9": 325
+    },
+    "rr_per_user": [
+      {
+        "user": 1,
+        "n_beats": 91858,
+        "ibi_min_s": 0.251,
+        "ibi_max_s": 27.759,
+        "pct_outside_0.3_2.0s": 0.478,
+        "recording_hours": 23.59
+      },
+      {
+        "user": 2,
+        "n_beats": 71646,
+        "ibi_min_s": 0.25,
+        "ibi_max_s": 61.688,
+        "pct_outside_0.3_2.0s": 1.387,
+        "recording_hours": 23.7
+      },
+      {
+        "user": 3,
+        "n_beats": 83965,
+        "ibi_min_s": 0.055,
+        "ibi_max_s": 11.099,
+        "pct_outside_0.3_2.0s": 0.456,
+        "recording_hours": 24.74
+      },
+      {
+        "user": 4,
+        "n_beats": 62669,
+        "ibi_min_s": 0.251,
+        "ibi_max_s": 21.953,
+        "pct_outside_0.3_2.0s": 0.239,
+        "recording_hours": 24.48
+      },
+      {
+        "user": 5,
+        "n_beats": 77782,
+        "ibi_min_s": 0.163,
+        "ibi_max_s": 41.942,
+        "pct_outside_0.3_2.0s": 0.121,
+        "recording_hours": 24.57
+      },
+      {
+        "user": 6,
+        "n_beats": 92357,
+        "ibi_min_s": 0.25,
+        "ibi_max_s": 22.367,
+        "pct_outside_0.3_2.0s": 0.449,
+        "recording_hours": 23.83
+      },
+      {
+        "user": 7,
+        "n_beats": 83507,
+        "ibi_min_s": 0.25,
+        "ibi_max_s": 4.729,
+        "pct_outside_0.3_2.0s": 0.007,
+        "recording_hours": 24.09
+      },
+      {
+        "user": 8,
+        "n_beats": 71498,
+        "ibi_min_s": 0.25,
+        "ibi_max_s": 16.857,
+        "pct_outside_0.3_2.0s": 1.05,
+        "recording_hours": 23.25
+      },
+      {
+        "user": 9,
+        "n_beats": 75250,
+        "ibi_min_s": 0.251,
+        "ibi_max_s": 17.203,
+        "pct_outside_0.3_2.0s": 0.066,
+        "recording_hours": 23.3
+      },
+      {
+        "user": 10,
+        "n_beats": 68118,
+        "ibi_min_s": 0.251,
+        "ibi_max_s": 18.514,
+        "pct_outside_0.3_2.0s": 0.539,
+        "recording_hours": 24.26
+      },
+      {
+        "user": 11,
+        "n_beats": 76803,
+        "ibi_min_s": 0.253,
+        "ibi_max_s": 15.22,
+        "pct_outside_0.3_2.0s": 0.07,
+        "recording_hours": 24.18
+      },
+      {
+        "user": 12,
+        "n_beats": 81214,
+        "ibi_min_s": 0.252,
+        "ibi_max_s": 6.986,
+        "pct_outside_0.3_2.0s": 0.009,
+        "recording_hours": 23.85
+      },
+      {
+        "user": 13,
+        "n_beats": 81267,
+        "ibi_min_s": 0.251,
+        "ibi_max_s": 20.414,
+        "pct_outside_0.3_2.0s": 0.036,
+        "recording_hours": 23.38
+      },
+      {
+        "user": 14,
+        "n_beats": 78527,
+        "ibi_min_s": 0.282,
+        "ibi_max_s": 1.427,
+        "pct_outside_0.3_2.0s": 0.004,
+        "recording_hours": 23.67
+      },
+      {
+        "user": 15,
+        "n_beats": 102340,
+        "ibi_min_s": 0.25,
+        "ibi_max_s": 24.496,
+        "pct_outside_0.3_2.0s": 3.319,
+        "recording_hours": 25.49
+      },
+      {
+        "user": 16,
+        "n_beats": 78181,
+        "ibi_min_s": 0.25,
+        "ibi_max_s": 15.441,
+        "pct_outside_0.3_2.0s": 0.361,
+        "recording_hours": 25.61
+      },
+      {
+        "user": 17,
+        "n_beats": 92951,
+        "ibi_min_s": 0.25,
+        "ibi_max_s": 61.561,
+        "pct_outside_0.3_2.0s": 0.469,
+        "recording_hours": 25.5
+      },
+      {
+        "user": 18,
+        "n_beats": 74296,
+        "ibi_min_s": 0.25,
+        "ibi_max_s": 12.413,
+        "pct_outside_0.3_2.0s": 0.716,
+        "recording_hours": 23.97
+      },
+      {
+        "user": 19,
+        "n_beats": 80239,
+        "ibi_min_s": 0.25,
+        "ibi_max_s": 8.393,
+        "pct_outside_0.3_2.0s": 0.165,
+        "recording_hours": 23.75
+      },
+      {
+        "user": 20,
+        "n_beats": 72209,
+        "ibi_min_s": 0.25,
+        "ibi_max_s": 13.756,
+        "pct_outside_0.3_2.0s": 0.409,
+        "recording_hours": 23.58
+      },
+      {
+        "user": 21,
+        "n_beats": 81677,
+        "ibi_min_s": 0.253,
+        "ibi_max_s": 5.112,
+        "pct_outside_0.3_2.0s": 0.062,
+        "recording_hours": 23.11
+      },
+      {
+        "user": 22,
+        "n_beats": 70941,
+        "ibi_min_s": 0.252,
+        "ibi_max_s": 14.503,
+        "pct_outside_0.3_2.0s": 0.023,
+        "recording_hours": 23.44
+      }
+    ],
+    "sleep_episodes": [
+      {
+        "user": 1,
+        "episodes": 2,
+        "efficiency": [
+          87.27,
+          92.02
+        ]
+      },
+      {
+        "user": 2,
+        "episodes": 1,
+        "efficiency": [
+          73.49
+        ]
+      },
+      {
+        "user": 3,
+        "episodes": 1,
+        "efficiency": [
+          79.23
+        ]
+      },
+      {
+        "user": 4,
+        "episodes": 1,
+        "efficiency": [
+          85.52
+        ]
+      },
+      {
+        "user": 5,
+        "episodes": 1,
+        "efficiency": [
+          85.71
+        ]
+      },
+      {
+        "user": 6,
+        "episodes": 1,
+        "efficiency": [
+          84.3
+        ]
+      },
+      {
+        "user": 7,
+        "episodes": 1,
+        "efficiency": [
+          75.33
+        ]
+      },
+      {
+        "user": 8,
+        "episodes": 1,
+        "efficiency": [
+          80.77
+        ]
+      },
+      {
+        "user": 9,
+        "episodes": 1,
+        "efficiency": [
+          91.75
+        ]
+      },
+      {
+        "user": 10,
+        "episodes": 1,
+        "efficiency": [
+          75.08
+        ]
+      },
+      {
+        "user": 11,
+        "episodes": 0,
+        "efficiency": null
+      },
+      {
+        "user": 12,
+        "episodes": 1,
+        "efficiency": [
+          94.23
+        ]
+      },
+      {
+        "user": 13,
+        "episodes": 1,
+        "efficiency": [
+          76.47
+        ]
+      },
+      {
+        "user": 14,
+        "episodes": 1,
+        "efficiency": [
+          90.78
+        ]
+      },
+      {
+        "user": 15,
+        "episodes": 1,
+        "efficiency": [
+          89.39
+        ]
+      },
+      {
+        "user": 16,
+        "episodes": 1,
+        "efficiency": [
+          74.34
+        ]
+      },
+      {
+        "user": 17,
+        "episodes": 1,
+        "efficiency": [
+          86.93
+        ]
+      },
+      {
+        "user": 18,
+        "episodes": 1,
+        "efficiency": [
+          84.36
+        ]
+      },
+      {
+        "user": 19,
+        "episodes": 1,
+        "efficiency": [
+          74.07
+        ]
+      },
+      {
+        "user": 20,
+        "episodes": 1,
+        "efficiency": [
+          88.07
+        ]
+      },
+      {
+        "user": 21,
+        "episodes": 1,
+        "efficiency": [
+          91.92
+        ]
+      },
+      {
+        "user": 22,
+        "episodes": 1,
+        "efficiency": [
+          84.92
+        ]
+      }
+    ],
+    "questionnaire_out_of_range": [
+      {
+        "user": 7,
+        "item": "STAI2",
+        "value": 0.0,
+        "valid_range": [
+          20,
+          80
+        ]
+      }
+    ],
+    "questionnaire_missing": {
+      "panas_pos_14": [
+        13
+      ],
+      "panas_neg_14": [
+        13
+      ]
+    },
+    "questionnaire_summary": {
+      "MEQ": {
+        "count": 22.0,
+        "mean": 50.32,
+        "std": 7.03,
+        "min": 38.0,
+        "25%": 45.25,
+        "50%": 49.5,
+        "75%": 55.0,
+        "max": 64.0
+      },
+      "STAI1": {
+        "count": 22.0,
+        "mean": 35.64,
+        "std": 8.33,
+        "min": 24.0,
+        "25%": 29.25,
+        "50%": 33.5,
+        "75%": 40.5,
+        "max": 54.0
+      },
+      "STAI2": {
+        "count": 22.0,
+        "mean": 39.5,
+        "std": 10.29,
+        "min": 0.0,
+        "25%": 39.0,
+        "50%": 42.0,
+        "75%": 44.75,
+        "max": 49.0
+      },
+      "Pittsburgh": {
+        "count": 22.0,
+        "mean": 5.32,
+        "std": 1.99,
+        "min": 2.0,
+        "25%": 4.0,
+        "50%": 5.0,
+        "75%": 7.0,
+        "max": 9.0
+      },
+      "Daily_stress": {
+        "count": 22.0,
+        "mean": 32.18,
+        "std": 16.3,
+        "min": 10.0,
+        "25%": 22.25,
+        "50%": 30.5,
+        "75%": 40.25,
+        "max": 74.0
+      },
+      "BISBAS_bis": {
+        "count": 22.0,
+        "mean": 22.32,
+        "std": 2.46,
+        "min": 19.0,
+        "25%": 20.0,
+        "50%": 22.0,
+        "75%": 24.0,
+        "max": 26.0
+      },
+      "BISBAS_reward": {
+        "count": 22.0,
+        "mean": 19.55,
+        "std": 2.65,
+        "min": 14.0,
+        "25%": 18.0,
+        "50%": 19.0,
+        "75%": 21.0,
+        "max": 25.0
+      },
+      "BISBAS_drive": {
+        "count": 22.0,
+        "mean": 12.23,
+        "std": 2.07,
+        "min": 8.0,
+        "25%": 11.0,
+        "50%": 12.0,
+        "75%": 14.0,
+        "max": 16.0
+      },
+      "BISBAS_fun": {
+        "count": 22.0,
+        "mean": 10.82,
+        "std": 3.39,
+        "min": 5.0,
+        "25%": 8.25,
+        "50%": 11.0,
+        "75%": 13.75,
+        "max": 16.0
+      },
+      "panas_pos_10": {
+        "count": 22.0,
+        "mean": 27.27,
+        "std": 4.69,
+        "min": 21.0,
+        "25%": 23.25,
+        "50%": 28.0,
+        "75%": 29.75,
+        "max": 37.0
+      },
+      "panas_pos_14": {
+        "count": 21.0,
+        "mean": 23.76,
+        "std": 6.11,
+        "min": 13.0,
+        "25%": 20.0,
+        "50%": 24.0,
+        "75%": 27.0,
+        "max": 34.0
+      },
+      "panas_pos_18": {
+        "count": 22.0,
+        "mean": 25.27,
+        "std": 6.4,
+        "min": 12.0,
+        "25%": 21.25,
+        "50%": 25.5,
+        "75%": 30.0,
+        "max": 36.0
+      },
+      "panas_pos_22": {
+        "count": 22.0,
+        "mean": 20.5,
+        "std": 5.13,
+        "min": 11.0,
+        "25%": 17.25,
+        "50%": 20.5,
+        "75%": 23.75,
+        "max": 30.0
+      },
+      "panas_pos_9+1": {
+        "count": 22.0,
+        "mean": 23.41,
+        "std": 6.03,
+        "min": 13.0,
+        "25%": 20.5,
+        "50%": 24.0,
+        "75%": 25.75,
+        "max": 35.0
+      },
+      "panas_neg_10": {
+        "count": 22.0,
+        "mean": 14.18,
+        "std": 4.67,
+        "min": 10.0,
+        "25%": 11.0,
+        "50%": 13.0,
+        "75%": 14.75,
+        "max": 26.0
+      },
+      "panas_neg_14": {
+        "count": 21.0,
+        "mean": 14.48,
+        "std": 4.53,
+        "min": 10.0,
+        "25%": 12.0,
+        "50%": 13.0,
+        "75%": 15.0,
+        "max": 29.0
+      },
+      "panas_neg_18": {
+        "count": 22.0,
+        "mean": 15.32,
+        "std": 4.21,
+        "min": 10.0,
+        "25%": 11.5,
+        "50%": 14.5,
+        "75%": 17.75,
+        "max": 24.0
+      },
+      "panas_neg_22": {
+        "count": 22.0,
+        "mean": 15.0,
+        "std": 3.99,
+        "min": 10.0,
+        "25%": 13.0,
+        "50%": 14.5,
+        "75%": 15.75,
+        "max": 27.0
+      },
+      "panas_neg_9+1": {
+        "count": 22.0,
+        "mean": 13.09,
+        "std": 2.35,
+        "min": 10.0,
+        "25%": 11.25,
+        "50%": 13.0,
+        "75%": 14.75,
+        "max": 18.0
+      }
+    },
+    "user_info": {
+      "gender": {
+        "M": 22
+      },
+      "age_zero_users": [
+        18
+      ],
+      "age": {
+        "count": 21.0,
+        "mean": 27.3,
+        "std": 4.2,
+        "min": 20.0,
+        "25%": 25.0,
+        "50%": 27.0,
+        "75%": 28.0,
+        "max": 40.0
+      }
+    },
+    "activity_codes": {
+      "0": 34,
+      "1": 12,
+      "2": 76,
+      "3": 85,
+      "4": 7,
+      "5": 11,
+      "6": 88,
+      "7": 41,
+      "8": 17,
+      "9": 37,
+      "10": 13,
+      "11": 6,
+      "12": 29
+    },
+    "activity_undocumented_code0_rows": 34,
+    "activity_missing_end": 2,
+    "saliva": {
+      "users": 21,
+      "samples": {
+        "before sleep": 21,
+        "wake up": 21
+      },
+      "melatonin_zero_values": 1
+    }
+  }
+}

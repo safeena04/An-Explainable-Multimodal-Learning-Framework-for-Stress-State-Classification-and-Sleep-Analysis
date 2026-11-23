@@ -1,0 +1,10 @@
+{
+  "n_participants": 21,
+  "primary_target": "sleep_efficiency",
+  "validation": "leave-one-subject-out",
+  "permutations": 1000,
+  "any_model_beats_baseline_primary": false,
+  "weighted_fusion": "not run: fusion weights cannot be estimated reliably from 20 training participants",
+  "runtime_s": 2471,
+  "rf_permutations": 200
+}

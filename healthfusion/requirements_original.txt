@@ -1,0 +1,20 @@
+# Versions used to produce the published results (Python 3.13). Newer minor
+# versions should work; exact numbers can shift slightly with library changes.
+numpy==2.5.3
+pandas==3.0.5
+scipy==1.18.1
+scikit-learn==1.9.1
+xgboost==3.4.1
+shap==0.54.1
+neurokit2==0.3.0
+matplotlib==3.11.2
+seaborn==0.13.2
+joblib==1.6.0
+fastapi==0.165.0
+uvicorn==0.54.0
+pydantic==2.13.5
+httpx==0.28.1
+pytest==9.1.1
+nbformat==5.11.1
+nbconvert==7.17.2
+ipykernel==7.4.0

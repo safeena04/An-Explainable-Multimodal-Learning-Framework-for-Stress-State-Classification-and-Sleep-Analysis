@@ -1,0 +1,104 @@
+{
+  "models": [
+    {
+      "key": "stress_ecg_eda_hr",
+      "task": "stress",
+      "modalities": [
+        "ECG",
+        "EDA",
+        "HR"
+      ],
+      "experiment": "ECG+EDA+HR | early | logreg",
+      "validated": true,
+      "roc_auc_mean": 0.7368,
+      "corrected_p": 0.0001985153801858276
+    },
+    {
+      "key": "stress_eda_hr",
+      "task": "stress",
+      "modalities": [
+        "EDA",
+        "HR"
+      ],
+      "experiment": "EDA+HR | early | random_forest",
+      "validated": true,
+      "roc_auc_mean": 0.7343,
+      "corrected_p": 0.00022673866771558322
+    },
+    {
+      "key": "stress_ecg_hr",
+      "task": "stress",
+      "modalities": [
+        "ECG",
+        "HR"
+      ],
+      "experiment": "ECG+HR | early | logreg",
+      "validated": true,
+      "roc_auc_mean": 0.6963,
+      "corrected_p": 0.002085538991242499
+    },
+    {
+      "key": "stress_ecg_eda",
+      "task": "stress",
+      "modalities": [
+        "ECG",
+        "EDA"
+      ],
+      "experiment": "ECG+EDA | late | xgboost",
+      "validated": true,
+      "roc_auc_mean": 0.6909,
+      "corrected_p": 0.015498144059822618
+    },
+    {
+      "key": "stress_eda",
+      "task": "stress",
+      "modalities": [
+        "EDA"
+      ],
+      "experiment": "EDA | single | random_forest",
+      "validated": true,
+      "roc_auc_mean": 0.6825,
+      "corrected_p": 0.017954059713284048
+    },
+    {
+      "key": "stress_hr",
+      "task": "stress",
+      "modalities": [
+        "HR"
+      ],
+      "experiment": "HR | single | logreg",
+      "validated": true,
+      "roc_auc_mean": 0.6795,
+      "corrected_p": 0.0011404356375263526
+    },
+    {
+      "key": "stress_ecg",
+      "task": "stress",
+      "modalities": [
+        "ECG"
+      ],
+      "experiment": "ECG | single | logreg",
+      "validated": false,
+      "roc_auc_mean": 0.6207,
+      "corrected_p": 0.07060093366088235
+    },
+    {
+      "key": "sleep_efficiency",
+      "task": "sleep",
+      "validated": false,
+      "r2": 0.0071679498944292,
+      "permutation_p": 0.0895522388059701,
+      "permutation_p_holm": 1.0,
+      "experiment": "Behav+Psych | early | random_forest"
+    }
+  ],
+  "environment": {
+    "python": "3.13.18",
+    "numpy": "2.5.3",
+    "pandas": "3.0.5",
+    "scikit-learn": "1.9.1",
+    "xgboost": "3.4.1",
+    "shap": "0.54.1",
+    "neurokit2": "0.3.0"
+  }
+}

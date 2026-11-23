@@ -1,0 +1,53 @@
+{
+  "key": "stress_hr",
+  "task": "stress_classification",
+  "dataset": "QoL_Stress",
+  "modalities": [
+    "HR"
+  ],
+  "strategy": "single",
+  "algorithm": "logreg",
+  "features": [
+    "fb_hr_mean",
+    "fb_hr_std",
+    "fb_hr_p05",
+    "fb_hr_p95",
+    "fb_hr_slope"
+  ],
+  "positive_class": "stress (1); relax = 0",
+  "threshold": 0.5,
+  "trained_on": {
+    "participants": 45,
+    "rows": 90,
+    "subset": "complete-case participants (all three modalities in both phases)"
+  },
+  "hyperparameters": {
+    "model__C": 1.0
+  },
+  "random_seed": 42,
+  "validation": {
+    "scheme": "5-fold participant-grouped CV x 5 repeats, nested tuning",
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "roc_auc_mean": 0.6795061728395063,
+    "roc_auc_sd": 0.0902642791779444,
+    "balanced_accuracy_mean": 0.6466666666666667,
+    "macro_f1_mean": 0.6316920964798203,
+    "pairwise_accuracy_mean": 0.6755555555555557,
+    "corrected_ttest_vs_chance": {
+      "mean_diff": 0.1795061728395062,
+      "t": 3.692873833799501,
+      "p_value": 0.0011404356375263526
+    },
+    "permutation_p_value": 0.0049751243781094,
+    "criterion": "mean AUC > 0.5 and corrected resampled t-test p < 0.05",
+    "validated": true
+  },
+  "intended_use": "Research demonstration only. Not a medical device; not for diagnosis.",
+  "trained_at": "2026-11-19T02:57:36+00:00"
+}
