@@ -1,0 +1,67 @@
+pid,sex,age,education_level,job_category,pss14,stai_relax,stai_stress,stai_delta
+Q11,Male,28,Master,Junior Researcher,17,34,31,-3
+Q57,Female,23,Bachelor,Junior Researcher,15,25,27,2
+Q25,Female,27,Master,Junior Researcher,11,26,26,0
+Q09,Female,25,Master,Junior Researcher,27,34,38,4
+Q24,Male,28,Master,Junior Researcher,17,23,24,1
+Q42,Male,28,Master,Junior Researcher,33,40,49,9
+Q31,Female,26,Master,Junior Researcher,12,24,27,3
+Q55,Male,27,Master,Junior Staff,17,33,38,5
+Q56,Male,24,Bachelor,Junior Researcher,19,49,49,0
+Q12,Male,25,Master,Researcher,28,46,51,5
+Q49,Male,29,Master,Researcher,34,42,53,11
+Q62,Female,46,PhD,Senior Researcher,25,28,44,16
+Q33,Female,26,Bachelor,Junior Staff,32,36,50,14
+Q18,Male,31,PhD,Researcher,19,32,32,0
+Q32,Male,27,Master,Researcher,31,28,32,4
+Q58,Female,43,Bachelor,Senior Staff,19,26,26,0
+Q53,Male,27,Master,Junior Researcher,25,35,37,2
+Q39,Female,33,Bachelor,Staff,41,40,49,9
+Q08,Male,34,PhD,Researcher,33,36,38,2
+Q51,Female,31,Bachelor,Senior Staff,19,26,30,4
+Q30,Male,32,PhD,Researcher,23,32,37,5
+Q47,Male,29,Master,Junior Researcher,12,26,30,4
+Q45,Male,31,Master,Researcher,4,24,25,1
+Q21,Male,53,PhD,Senior Researcher,22,27,26,-1
+Q65,Male,41,Master,Senior Staff,22,38,44,6
+Q59,Male,26,Bachelor,Junior Staff,34,53,46,-7
+Q19,Female,27,Master,Researcher,27,33,43,10
+Q04,Male,35,PhD,Researcher,22,38,36,-2
+Q35,Male,43,PhD,Senior Researcher,15,26,26,0
+Q40,Male,29,Master,Junior Researcher,27,34,43,9
+Q50,Female,24,Master,Junior Researcher,34,30,29,-1
+Q01,Female,42,Master,Researcher,19,25,30,5
+Q43,Male,40,PhD,Researcher,24,36,37,1
+Q02,Female,26,Master,Junior Researcher,24,27,29,2
+Q41,Female,30,PhD,Senior Researcher,30,33,37,4
+Q46,Male,29,Master,Junior Researcher,19,24,24,0
+Q36,Male,23,Bachelor,Junior Staff,25,32,32,0
+Q14,Male,25,Master,Junior Researcher,24,37,33,-4
+Q16,Female,29,Master,Researcher,39,39,39,0
+Q10,Female,24,Bachelor,Junior Researcher,32,43,47,4
+Q20,Male,23,Bachelor,Junior Staff,19,27,35,8
+Q13,Male,22,Bachelor,Junior Researcher,15,27,40,13
+Q05,Male,49,Master,Senior Staff,34,42,41,-1
+Q37,Male,23,Master,Junior Researcher,13,27,30,3
+Q38,Male,23,Master,Junior Researcher,23,40,45,5
+Q22,Female,39,Bachelor,Staff,31,35,53,18
+Q60,Male,25,Bachelor,Junior Researcher,40,45,33,-12
+Q23,Female,27,Master,Junior Researcher,20,36,38,2
+Q44,Female,24,Bachelor,Junior Researcher,28,34,31,-3
+Q06,Male,23,Bachelor,Junior Researcher,25,33,36,3
+Q48,Male,23,Master,Junior Researcher,24,36,44,8
+Q28,Male,22,Bachelor,Junior Researcher,29,28,32,4
+Q29,Female,35,PhD,Senior Researcher,20,31,36,5
+Q15,Female,26,Master,Researcher,45,45,58,13
+Q66,Female,28,Master,Researcher,10,26,26,0
+Q52,Female,24,Master,Junior Staff,26,38,41,3
+Q61,Male,33,Master,Junior Researcher,15,25,28,3
+Q63,Male,28,Master,Junior Researcher,43,43,41,-2
+Q26,Male,27,Master,Researcher,35,34,52,18
+Q54,Female,32,PhD,Researcher,25,31,48,17
+Q34,Male,25,Master,Junior Researcher,28,56,39,-17
+Q03,Female,26,Master,Junior Researcher,19,25,30,5
+Q07,Male,25,Master,Junior Researcher,12,30,30,0
+Q64,Female,27,Master,Junior Researcher,22,35,37,2
+Q27,Male,38,PhD,Senior Researcher,20,32,32,0
+Q17,Female,37,PhD,Senior Staff,13,31,25,-6

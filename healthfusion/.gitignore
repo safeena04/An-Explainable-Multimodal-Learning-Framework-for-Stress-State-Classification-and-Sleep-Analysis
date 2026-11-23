@@ -47,7 +47,6 @@ htmlcov/
 
 # Model and training artifacts
 *.pkl
-*.joblib
 *.h5
 *.keras
 *.pt
@@ -56,11 +55,10 @@ htmlcov/
 
 # Large datasets
 data/raw/
-data/processed/
+
 
 # Generated experiment outputs
-results/metrics/
-results/figures/
+
 results/reports/*.log
 
 # Node modules, if applicable
@@ -70,3 +68,9 @@ node_modules/
 *.db
 *.sqlite
 *.sqlite3
+
+results.zip
+results/metrics_backup_before_rerun/
+results/metrics_quick_qol/
+results/metrics_full_qol/
+results/metrics_full_mmash/

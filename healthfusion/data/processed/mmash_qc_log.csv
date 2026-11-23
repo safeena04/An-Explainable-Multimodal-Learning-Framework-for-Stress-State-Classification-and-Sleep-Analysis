@@ -1,0 +1,23 @@
+user,load_issues,pre_sleep_hours,rr_beats_pre_sleep,rr_pct_artefact_pre_sleep,hrv_5min_segments_kept,actigraph_worn_hours_pre_sleep,diary_code0_rows_excluded,diary_rows_without_end_excluded,questionnaire_values_set_missing,included,reason
+1,none,14.6,61474.0,2.61,174.0,11.51,1.0,1.0,none,True,passed
+2,none,14.78,51733.0,4.45,161.0,11.05,2.0,1.0,none,True,passed
+3,none,13.23,52854.0,2.68,154.0,10.65,1.0,0.0,none,True,passed
+4,none,15.82,45157.0,24.39,15.0,12.08,1.0,0.0,none,True,passed
+5,none,14.51,53031.0,2.72,172.0,10.83,3.0,0.0,none,True,passed
+6,none,16.14,66471.0,2.42,186.0,11.28,1.0,0.0,none,True,passed
+7,none,14.59,56566.0,0.13,174.0,11.02,1.0,0.0,STAI2=0,True,passed
+8,user_8/RR: day codes [-29] recoded to 2 (23434 rows) | user_8/Actigraph: day codes [-29] recoded to 2 (22402 rows),14.4,48931.0,1.88,159.0,10.02,3.0,0.0,none,True,passed
+9,user_9/RR: day codes [-29] recoded to 2 (24165 rows) | user_9/Actigraph: day codes [-29] recoded to 2 (25024 rows),14.39,52804.0,0.45,164.0,10.38,3.0,0.0,none,True,passed
+10,none,17.58,59619.0,3.61,197.0,13.19,2.0,0.0,none,True,passed
+11,none,,,,,,,,,False,no sleep episode recorded: no target and no pre-sleep window
+12,none,15.1,54028.0,0.13,180.0,10.7,1.0,0.0,none,True,passed
+13,none,14.23,54407.0,0.21,167.0,10.96,1.0,0.0,none,True,passed
+14,none,14.95,52830.0,0.25,179.0,10.26,1.0,0.0,none,True,passed
+15,none,15.74,67725.0,2.37,182.0,12.37,1.0,0.0,none,True,passed
+16,none,15.02,54533.0,0.69,180.0,11.87,1.0,0.0,none,True,passed
+17,none,15.3,64896.0,1.92,177.0,11.74,1.0,0.0,none,True,passed
+18,none,15.58,51411.0,2.29,178.0,10.22,3.0,0.0,none,True,passed
+19,none,13.38,51691.0,1.13,156.0,9.96,1.0,0.0,none,True,passed
+20,none,15.6,53404.0,1.44,180.0,12.06,1.0,0.0,none,True,passed
+21,user_21: saliva.csv not provided,16.63,60634.0,0.35,197.0,13.04,2.0,0.0,none,True,passed
+22,none,15.9,51587.0,0.21,185.0,11.94,1.0,0.0,none,True,passed
