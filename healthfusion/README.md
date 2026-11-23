@@ -42,6 +42,12 @@ Full write-up: **[results/reports/02_final_research_report.md](results/reports/0
 Phase 1 data audit: **[results/reports/01_phase1_feasibility_report.md](results/reports/01_phase1_feasibility_report.md)**.
 <!-- RESULTS:END -->
 
+> **Notes on these numbers.** Rows are the models served by the API (see `models/stress/*.json`).
+> The 95 % intervals are mean ± 1.96·SD/√25 over 25 overlapping cross-validation folds and are
+> optimistic; a participant-level bootstrap of the pooled predictions gives roughly 0.60–0.77
+> for the best model. The best configuration was chosen as the maximum of 54 configurations on the
+> same folds, so 0.737 is optimistic. XGBoost-based results can differ slightly between runs.
+
 ---
 
 ## Project structure
@@ -140,6 +146,14 @@ send** (ECG, EDA, HR or any combination), so a missing sensor is never filled in
 with invented values. A modality set whose model failed validation is refused
 with HTTP 422 and the evidence.
 
+## Environment used for the reported results
+
+* OS: Windows
+* RAM: 8 GB
+* GPU: none used
+* Python 3.13, libraries pinned in `requirements.txt`
+* Random seeds: 42–46 (see `src/config.py`)
+
 ## Research-quality safeguards
 
 * No synthetic participants, no overlapping windows, no fabricated values.
@@ -156,9 +170,12 @@ with HTTP 422 and the evidence.
 
 * QoL_Stress: Calvo A., Cejudo A., Martin C. *QoL_Stress: a multimodal dataset of
   physiological and self-reported stress responses* (v1.0.0). PhysioNet. CC BY 4.0.
+  Download: https://physionet.org/content/qol-stress/1.0.0/
 * MMASH: Rossi A. et al. *Multilevel Monitoring of Activity and Sleep in Healthy
   People* (v1.0.0). PhysioNet. ODbL.
+  Download: https://physionet.org/content/mmash/1.0.0/
 * Cite PhysioNet: Goldberger A. et al. Circulation 101(23):e215-e220 (2000).
 
-The raw data are not redistributed in this repository; download them from
-PhysioNet and run `scripts/setup_data.py`.
+The raw data are not redistributed in this repository; download the two zip files from the
+links above and run `python scripts/setup_data.py` (see Quick start). `data/sample/` contains one
+QoL_Stress participant's recording, shared under the dataset's CC BY 4.0 licence.
