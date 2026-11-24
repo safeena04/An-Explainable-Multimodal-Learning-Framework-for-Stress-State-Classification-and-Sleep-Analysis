@@ -13,5 +13,5 @@
   ],
   "n_configurations_compared": 54,
   "selection_note": "best_overall is the highest mean outer-CV AUC among all configurations; choosing the maximum of many configurations is optimistic (winner's curse).",
-  "runtime_s": 1103
+  "runtime_s": 839
 }

@@ -72,5 +72,5 @@ node_modules/
 results.zip
 results/metrics_backup_before_rerun/
 results/metrics_quick_qol/
-results/metrics_full_qol/
-results/metrics_full_mmash/
+# results/metrics_full_qol/ and results/metrics_full_mmash/ are tracked:
+# they hold the independent Windows rerun used as a reproducibility check.

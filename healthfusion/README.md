@@ -148,11 +148,22 @@ with HTTP 422 and the evidence.
 
 ## Environment used for the reported results
 
-* OS: Windows
-* RAM: 8 GB
+* Python 3.13.18 with the library versions pinned in `requirements_original.txt`
+  (numpy 2.5.3, pandas 3.0.5, scipy 1.18.1, scikit-learn 1.9.1, xgboost 3.4.1,
+  shap 0.54.1, neurokit2 0.3.0); the same versions are recorded in `models/registry.json`
 * GPU: none used
-* Python 3.13, libraries pinned in `requirements.txt`
 * Random seeds: 42–46 (see `src/config.py`)
+* Every reported number is in `results/metrics/`
+
+**Reproducibility check.** The QoL_Stress and MMASH experiments were rerun
+independently on Windows (8 GB RAM, no GPU) with the versions in `requirements.txt`
+(numpy 2.2.6, xgboost 2.1.4, shap 0.48.0, neurokit2 0.2.10). The rerun reproduced
+every logistic-regression, SVM, Ridge and baseline result, and every QoL_Stress
+random-forest result, exactly. XGBoost and gradient-boosting AUCs changed by at most
+0.012 and MMASH random-forest MAE by at most 0.03. The only visible consequence is
+that the best ECG-only configuration switched from logistic regression (AUC 0.621)
+to XGBoost (AUC 0.623); no conclusion changed. The rerun outputs are in
+`results/metrics_full_qol/` and `results/metrics_full_mmash/`.
 
 ## Research-quality safeguards
 
